@@ -135,11 +135,11 @@ class CHARM_AD(BaseDetector):
         self,
         HP: dict,
         window_size: int = 128,
-        stride: int = 8,
+        stride: int = 1,
         k: int = 3,
         pointwise_agg: str = "mean",
         api_batch_size: int = 64,
-        train_stride: int = 8,
+        train_stride: int = 1,
         min_window: int = 64,
         normalize: bool = True,
     ):
@@ -277,8 +277,8 @@ def run_CHARM(
     window_size=128,
     k=3,
     pointwise_agg="mean",
-    stride=8,
-    train_stride=8,
+    stride=1,
+    train_stride=1,
     min_window=64,
 ):
     """Semisupervised runner — matches TSB-AD's run_Semisupervise_AD dispatcher."""
@@ -303,8 +303,8 @@ CHARM_HP = {
     "window_size": 128,
     "k": 3,
     "pointwise_agg": "mean",
-    "stride": 8,
-    "train_stride": 8,
+    "stride": 1,
+    "train_stride": 1,
     "min_window": 64,
 }
 
