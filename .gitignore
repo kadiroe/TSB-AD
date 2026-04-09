@@ -5,3 +5,4 @@ run_scripts
 Datasets/TSB-AD-Datasets
 TSB_AD/models/NormA.py
 lightning_logs
+Time-RCD

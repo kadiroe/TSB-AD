@@ -85,6 +85,9 @@ Multi_algo_HP_dict = {
     'OFA': {
         'win_size': [50, 100, 150]
     },
+    'Time_RCD': {
+        'win_size': [15000]
+    },
     'xLSTMAD': {
         'window_size': [50, 100, 150],
         'lr': [0.001],
@@ -119,6 +122,7 @@ Optimal_Multi_algo_HP_dict = {
     'TimesNet': {'win_size': 96, 'lr': 0.0001},
     'FITS': {'win_size': 100, 'lr': 0.001},
     'OFA': {'win_size': 50},
+    'Time_RCD': {'win_size': 15000, 'batch_size': 64},
     'xLSTMAD': {'window_size': 50, 'lr': 0.001, 'embedding_dim': 40},
 }
 
@@ -240,6 +244,9 @@ Uni_algo_HP_dict = {
     'MOMENT_FT': {
         'win_size': [64, 128, 256]
     },
+    'Time_RCD': {
+        'win_size': [15000]
+    },
     'xLSTMAD': {
         'window_size': [50, 100, 150],
         'lr': [0.0005, 0.001],
@@ -285,6 +292,7 @@ Optimal_Uni_algo_HP_dict = {
     'MOMENT_ZS': {'win_size': 64},
     'MOMENT_FT': {'win_size': 64},
     'M2N2': {},
+    'Time_RCD': {'win_size': 15000, 'batch_size': 64},
     'TSPulse_ZS': {'win_size': 96, 
                    'prediction_mode': 'time'},
     'TSPulse_FT': {'win_size': 96, 
